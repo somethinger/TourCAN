@@ -28,6 +28,8 @@ PowerPortNamesTakePriority=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
+FSMCodingStyle=eFMSDropDownList_OneProcess
+FSMEncodingStyle=eFMSDropDownList_OneHot
 OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
@@ -104,10 +106,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LXBAROVP
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for VW\Design Rule Check - VW.html
-DItemRevisionGUID=
-
 [Configuration1]
 Name=Default Configuration
 ParameterCount=0
@@ -115,14 +113,13 @@ ConstraintFileCount=0
 ReleaseItemId=
 CurrentRevision=
 Variant=[No Variations]
-GenerateBOM=1
 OutputJobsCount=0
 
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=\\OPX-FTSERVER\CanonMF4010
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
+TargetPrinter=\\opx-ftserver\CanonMF4010
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CadnetixNetlist
 OutputName1=Cadnetix Netlist
 OutputDocumentPath1=
@@ -252,8 +249,8 @@ OutputDefault25=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=\\OPX-FTSERVER\CanonMF4010
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
+TargetPrinter=\\opx-ftserver\CanonMF4010
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AdvSimNetlist
 OutputName1=Mixed Sim
 OutputDocumentPath1=
@@ -274,7 +271,7 @@ OutputDefault3=0
 Name=Documentation Outputs
 Description=
 TargetPrinter=Virtual Printer
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembler Source Print
 OutputName1=Assembler Source Prints
 OutputDocumentPath1=
@@ -389,12 +386,18 @@ OutputDocumentPath19=
 OutputVariantName19=
 OutputDefault19=0
 PageOptions19=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType20=PDF3D
+OutputName20=PDF3D
+OutputDocumentPath20=
+OutputVariantName20=[No Variations]
+OutputDefault20=0
+PageOptions20=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=\\OPX-FTSERVER\CanonMF4010
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
+TargetPrinter=\\opx-ftserver\CanonMF4010
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
 OutputDocumentPath1=
@@ -415,8 +418,8 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=\\OPX-FTSERVER\CanonMF4010
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
+TargetPrinter=\\opx-ftserver\CanonMF4010
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Board Stack Report
 OutputName1=Report Board Stack
 OutputDocumentPath1=
@@ -473,12 +476,22 @@ OutputName10=Test Point Report
 OutputDocumentPath10=
 OutputVariantName10=
 OutputDefault10=0
+OutputType11=Gerber X2
+OutputName11=Gerber X2 Files
+OutputDocumentPath11=
+OutputVariantName11=
+OutputDefault11=0
+OutputType12=IPC2581
+OutputName12=IPC-2581 Files
+OutputDocumentPath12=
+OutputVariantName12=
+OutputDefault12=0
 
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=\\OPX-FTSERVER\CanonMF4010
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
+TargetPrinter=\\opx-ftserver\CanonMF4010
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
 OutputDocumentPath1=
@@ -514,8 +527,8 @@ OutputDefault6=0
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=\\OPX-FTSERVER\CanonMF4010
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
+TargetPrinter=\\opx-ftserver\CanonMF4010
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
 OutputDocumentPath1=
@@ -694,8 +707,8 @@ PageOptions29=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=\\OPX-FTSERVER\CanonMF4010
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
+TargetPrinter=\\opx-ftserver\CanonMF4010
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Configuration compliance
 OutputName1=Environment configuration compliance check
 OutputDocumentPath1=
@@ -724,12 +737,17 @@ OutputName5=Footprint Comparison Report
 OutputDocumentPath5=
 OutputVariantName5=
 OutputDefault5=0
+OutputType6=Component states check
+OutputName6=Vault's components states check
+OutputDocumentPath6=
+OutputVariantName6=
+OutputDefault6=0
 
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=\\OPX-FTSERVER\CanonMF4010
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
+TargetPrinter=\\opx-ftserver\CanonMF4010
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB
 OutputDocumentPath1=
@@ -750,6 +768,11 @@ OutputName4=Export STEP
 OutputDocumentPath4=
 OutputVariantName4=[No Variations]
 OutputDefault4=0
+OutputType5=NetList Sch
+OutputName5=NetList Sch
+OutputDocumentPath5=
+OutputVariantName5=
+OutputDefault5=0
 
 [Modification Levels]
 Type1=1
@@ -830,6 +853,8 @@ Type75=1
 Type76=1
 Type77=1
 Type78=1
+Type79=1
+Type80=1
 
 [Difference Levels]
 Type1=1
@@ -875,6 +900,8 @@ Type40=1
 Type41=1
 Type42=1
 Type43=1
+Type44=0
+Type45=1
 
 [Electrical Rules Check]
 Type1=1
@@ -986,6 +1013,8 @@ Type106=2
 Type107=2
 Type108=2
 Type109=1
+Type110=1
+Type111=1
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW
@@ -1024,6 +1053,7 @@ NetClassAutoBusEnabled=1
 NetClassAutoCompEnabled=0
 NetClassAutoNamedHarnessEnabled=0
 NetClassManualEnabled=1
+NetClassSeparateForBusSections=0
 
 [LibraryUpdateOptions]
 SelectedOnly=0
